@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.abobkr-container {
+  @apply w-full px-4  sm:w-[90vw] lg:w-[80%]  ;
+}
+
+/* Heading text */
+.heading-text {
+  @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold;
+}
+
+
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: "Cairo", sans-serif;
+
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body{
+  background: linear-gradient(to bottom, #000000, #100016, #0c020f); /* Dark purple gradient */
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+/* For WebKit browsers */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: purple;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: purple #f1f1f1;
+}
+
+.loader-fade-out{
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}

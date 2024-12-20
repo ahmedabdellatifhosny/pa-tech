@@ -1,0 +1,139 @@
+
+.card {
+  position: relative;
+  margin: auto;
+  width: 19em;
+  height: 25em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #171717;
+  color: white;
+  font-weight: bold;
+  padding: 1em 2em 1em 1em;
+  border-radius: 20px;
+  overflow: hidden;
+  z-index: 1;
+  row-gap: 1em;
+}
+
+
+
+/* stars */
+.heading::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  opacity: 1;
+  box-shadow: 220px 118px #fff, 280px 176px #fff, 40px 50px #fff,
+    60px 180px #fff, 120px 130px #fff, 180px 176px #fff, 220px 290px #fff,
+    520px 250px #fff, 400px 220px #fff, 50px 350px #fff, 10px 230px #fff;
+  z-index: -1;
+  transition: 1s ease;
+  animation: 1s glowing-stars linear alternate infinite;
+  animation-delay: 0s;
+}
+
+
+
+
+
+.instagram {
+  position: relative;
+  transition: 0.4s ease-in-out;
+}#contact-us {
+  position: relative;
+  transition: 0.4s ease-in-out;
+  overflow: hidden; /* Ensure the star stays within bounds */
+}
+#contact-us {
+  position: relative;
+  transition: 0.4s ease-in-out;
+  overflow: hidden; /* Ensure the star stays within bounds */
+}
+
+#contact-us::after {
+  content: "";
+  top: 80%;
+  left: 10%;
+  position: absolute;
+  width: 7.5em;
+  height: 7.5em;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  background: #f9f9fb;
+  box-shadow: 
+  0px 0px 100px rgba(0, 0, 139, 0.8), /* Dark Blue */
+  0px 0px 100px rgba(0, 0, 255, 0.8), /* Bright Blue */
+  inset #00008B 0px 0px 40px -12px; /* Dark Blue */
+
+  transition: 0.4s ease-in-out;
+  z-index: -1;
+}
+
+#contact-us::before {
+  content: "";
+  top: 80%;
+  left: 80%;
+  position: absolute;
+  width: 7.5em;
+  height: 7.5em;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  background: #f9f9fb;
+  box-shadow: 0px 0px 100px rgba(193, 119, 241, 0.8),
+    0px 0px 100px rgba(135, 42, 211, 0.8), inset #9b40fc 0px 0px 40px -12px;
+  transition: 0.4s ease-in-out;
+  z-index: -1;
+}
+
+
+/* 
+.star::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: -100%;
+  width: 5em;
+  height: 1px;
+  background: linear-gradient(90deg, #ffffff, transparent);
+  animation: 10s shootingStar linear infinite alternate;
+  transition: 1s ease;
+  rotate: -45deg;
+  filter: blur(1px);
+}
+
+@keyframes shootingStar {
+  0% {
+    transform: translateX(0) translateY(0);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(100%) translateY(100%);
+    opacity: 1;
+  }
+}
+ */
+
+
+@keyframes glowing-stars {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
